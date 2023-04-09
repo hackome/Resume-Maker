@@ -1,0 +1,121 @@
+
+        body
+        {
+            background-color: rgba(248, 172, 248, 0.644);
+            border:10px double rgb(76, 5, 90);
+        }
+        header
+        {
+            text-align: center;
+           font-family: 'Sacramento', cursive;
+            font-size: 40px;
+            background-image:url(https://i.pinimg.com/originals/18/de/ce/18dece998de542fba3d5bcd1faf94e58.jpg);
+            background-size: cover;
+            padding:35px;
+            background-repeat: no-repeat;
+        }
+        #heading
+        {
+            font-family: 'Sacramento', cursive;
+            font-size:80px;
+            font-weight: bolder;
+            color:rgb(65, 13, 102);
+            text-shadow: 5px 5px rgb(111, 82, 158);
+        }
+        hr{
+           border-top: 5px dotted rgb(65, 13, 102)le; 
+        }
+        .container
+        {
+            background-image: url(https://wallpapercave.com/wp/wp4766526.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding:35px;
+            line-height: 50px;
+        }
+        
+.navbar{
+    
+    /* background-image:url(https://i.pinimg.com/originals/18/de/ce/18dece998de542fba3d5bcd1faf94e58.jpg); */
+    background-color: rgba(153, 77, 224, 0.219);
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    overflow:visible;
+    border-bottom: 4px solid rgb(76, 5, 90);
+    border-top: 4px solid rgb(76, 5, 90);
+}
+.navbar ul{
+    margin: 0px;
+}
+.navbar li{
+    float:left;
+    list-style-type: none;
+    padding:10px;
+}
+.navbar li a{
+    text-decoration: none;
+    color:rgb(65, 13, 102);
+    text-align: center;
+  padding: 14px 16px;
+
+}
+.navbar li a:hover{
+    color:blueviolet;
+    /* background-color:white; */
+}
+#clearfix::after { 
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+}
+
+        #heading2
+        {
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Sacramento', cursive;
+            color:rgb(65, 13, 102);
+            text-shadow: 2px 2px rgb(111, 82, 158);
+            border:5px double rgb(76, 5, 90);
+            padding:7px;
+        }
+        #content
+        {
+            font-size: 35px;
+            font-family: 'Sacramento', cursive;
+            text-align: center;
+        }
+        #table1{
+            width: 100%;
+            font-size: 35px;
+            font-family: 'Sacramento', cursive;
+            text-align: center;
+            float: none;
+            border:50px solid none;
+        }
+        #img2{
+            height: 100px;
+            width: auto;
+        }
+        #heading3{
+            font-size: 50px;
+            font-family: 'Sacramento', cursive;
+            color:rgb(65, 13, 102);
+            text-shadow: 2px 2px rgb(111, 82, 158);
+            padding:7px;
+            text-decoration: none;
+        }
+        #algnmid{
+            text-align: center;
+         }
+         #algnR{
+             text-align: right;
+         }
+         #algnL{
+             text-align: left;
+         }
+        
