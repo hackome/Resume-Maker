@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar" id="clearfix">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form method="POST" action="resume4.php">
+            <table id="table1">
+                <tr>
+                    <td colspan="2">
+                        <span id="heading3">Personal Information</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Name : </label></td>
+                    <td><input type="text" name="name" placeholder="Enter Your Name" required="required"></td>
+                </tr>
+                <tr>
+                    <td><label>Email : </label></td>
+                    <td>
+                        <input type="text" name="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Contact : </label></td>
+                    <td>
+                        <input type="text" name="contact" placeholder="Enter Your Mobile No." pattern="^\d{10}$" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Profile : </label></td>
+                    <td>
+                        <textarea type="text" name="profile" placeholder="Enter About Yourself"
+                            required="required"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table1">
+                <tr>
+                    <td colspan="3">
+                        <span id="heading3">Experience</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Job Title : </label>
+                        <input type="text" name="job_title1" placeholder="Job Title">
+                    </td>
+                    <td><label>Company : </label>
+                        <input type="text" name="company1" placeholder="Company Name">
+                    </td>
+                    <td><label>About Job : </label>
+                        <input type="text" name="about_job1" placeholder="About Job">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Job Title : </label>
+                        <input type="text" name="job_title2" placeholder="Job Title">
+                    </td>
+                    <td><label>Company : </label>
+                        <input type="text" name="company2" placeholder="Company Name">
+                    </td>
+                    <td><label>About Job : </label>
+                        <input type="text" name="about_job2" placeholder="About Job">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table1">
+                <tr>
+                    <td>
+                        <span id="heading3">Skills</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Highlight Your Skills :</label><br>
+                        <input type="text" name="skill1" placeholder="Enter Your Skill" required="required"><br>
+                        <input type="text" name="skill2" placeholder="Enter Your Skill"><br>
+                        <input type="text" name="skill3" placeholder="Enter Your Skill"><br>
+                        <input type="text" name="skill4" placeholder="Enter Your Skill"><br>
+                        <input type="text" name="skill5" placeholder="Enter Your Skill">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table1">
+                <tr>
+                    <td colspan="3">
+                        <span id="heading3">Education</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Course : </label>
+                        <input type="text" name="course1" placeholder="Enter Course Name" required="required">
+                    </td>
+                    <td><label>Institute : </label>
+                        <input type="text" name="institute1" placeholder="Institute Name" required="required">
+                    </td>
+                    <td><label>Year of Passing : </label>
+                        <input type="number" name="year1" max="2021" min="1950" placeholder="Year Of Passing"
+                            required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>Course : </label>
+                        <input type="text" name="course2" placeholder="Enter Course Name">
+                    </td>
+                    <td><label>Institute : </label>
+                        <input type="text" name="institute2" placeholder="Institute Name">
+                    </td>
+                    <td><label>Year of Passing : </label>
+                        <input type="number" name="year2" max="2021" min="1950" placeholder="Year Of Passing">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Course : </label>
+                        <input type="text" name="course3" placeholder="Enter Course Name">
+                    </td>
+                    <td><label>Institute : </label>
+                        <input type="text" name="institute3" placeholder="Institute Name">
+                    </td>
+                    <td><label>Year of Passing : </label>
+                        <input type="number" name="year3" max="2021" min="1950" placeholder="Year Of Passing">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table id="table1">
+                <tr>
+                    <td>
+                        <span id="heading3">Hobbies</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="hobby1" placeholder="Enter Your Hobby" required="required"><br>
+                        <input type="text" name="hobby2" placeholder="Enter Your Hobby"><br>
+                        <input type="text" name="hobby3" placeholder="Enter Your Hobby"><br>
+                        <input type="text" name="hobby4" placeholder="Enter Your Hobby"><br>
+                        <input type="text" name="hobby5" placeholder="Enter Your Hobby">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <input type="submit" value="Create PDF"><br><br>
+        </form>
+    </div>
+</body>
+
+</html>

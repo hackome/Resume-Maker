@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body class="">
+    <nav class="navbar" id="clearfix">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="resume3.php" method="POST">
+            <table id="table1">
+                <tr>
+                    <td>
+                        <label>Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" placeholder="Enter Your Name" required="required">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Job Title:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="job_title" placeholder="Job Title" required="required">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Profile:</label></td>
+                    <td><textarea type="text" name="profile" rows="6" cols="70"
+                            placeholder="Enter Your Text Here..."></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label>Address:</label></td>
+                    <td><input type="text" name="address" placeholder="Enter Your Address" required="required"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Date Of Birth:</label></td>
+                    <td><input type="date" name="dob" min="1970-01-01" max="2002-12-31" required="required"></td>
+                </tr>
+
+                <tr>
+                    <td> <label>Email:</label></td>
+                    <td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            required="required"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Phone:</label></td>
+                    <td><input type="number" name="contact" pattern="^\d{10}$" required="required"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <hr><span id="heading3">Education</span><br>
+                        Add information about your educational background.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label>High School Education</label><br>
+                        <input type="text" name="School1" placeholder="School" />
+                        <input type="month" name="Year1" placeholder="Year Of Passing" />
+                        <input type="text" name="percentage1" placeholder="Percentage Or CGPA" /><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Intermediate Education</label><br>
+                        <input type="text" name="School2" placeholder="School" />
+                        <input type="month" name="Year2" />
+                        <input type="text" name="percentage2" placeholder="Percentage Or CGPA" /><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Under Graduation</label><br>
+                        <input type="text" name="college1" placeholder="College" />
+                        <input type="month" name="Year3" placeholder="Year Of Passing" />
+                        <input type="text" name="percentage3" placeholder="Percentage Or CGPA" /><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Post Graduation</label><br>
+                        <input type="text" name="college2" placeholder="College" />
+                        <input type="month" name="Year4" placeholder="Year Of Passing" />
+                        <input type="text" name="percentage4" placeholder="Percentage Or CGPA" /><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <hr><label id="heading3">Experience:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Experience 1:
+                        <input type="text" name="experience1_heading" required="required" placeholder="Job Title">
+                        <input type="text" name="company1" required="required" placeholder="Company Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea type="text" name="experience1" required="required" placeholder="About Job"
+                            style="margin: 0px; height: 104px; width: 444px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Experience 2:
+                        <input type="text" name="experience2_heading" required="required" placeholder="Job Title">
+                        <input type="text" name="company2" required="required" placeholder="Company Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea type="text" name="experience2" required="required" placeholder="About Job"
+                            style="margin: 0px; height: 104px; width: 444px;"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <hr><span id="heading3">Skills</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="text" name="Skill1name" placeholder="Skill" />
+                        <select data-validate="" name="Skill1">
+                            <option value="">Select your skill level</option>
+                            <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                            <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                            <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                            <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                            <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="Skill2name" placeholder="Skill" />
+                        <select data-validate="" name="Skill2">
+                            <option value="">Select your skill level</option>
+                            <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                            <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                            <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                            <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                            <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="Skill3name" placeholder="Skill" />
+                        <select data-validate="" name="Skill3">
+                            <option value="">Select your skill level</option>
+                            <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                            <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                            <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                            <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                            <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label id="heading3">Hobbies:</label><br>
+                        <input type="text" name="hobby1" placeholder="Enter your hobby" /><br>
+                        <input type="text" name="hobby2" placeholder="Enter your hobby" /><br>
+                        <input type="text" name="hobby3" placeholder="Enter your hobby" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <hr><span id="heading3">Languages</span><br>
+                        <mark>It is mandatory to fill atleast one language.</mark>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="lan1Name" placeholder="Language Name" required="required" />
+                        <select data-validate="" name="lan1">
+                            <option value="">Select your language level</option>
+                            <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                            <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                            <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                            <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                            <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="lan2Name" placeholder="Language Name" />
+                        <select data-validate="" name="lan2">
+                            <option value="">Select your language level</option>
+                            <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                            <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                            <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                            <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                            <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="lan3Name" placeholder="Language Name" />
+                        <select data-validate="" name="lan3">
+                            <option value="">Select your language level</option>
+                            <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                            <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                            <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                            <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                            <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="SUBMIT" value="Submit" id="mybutton" />
+        </form>
+    </div>
+</body>
+
+</html>

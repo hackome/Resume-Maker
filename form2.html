@@ -1,0 +1,181 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="clearfix">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+
+    <form action="resume2.php" method="post" enctype="multipart/form-data" autocomplete="off">
+        <center><span id="heading3">Personal Information</span></center>
+        <table id="table1">
+            <tr>
+                <th rowspan="7"><img src=https://media.giphy.com/media/xbvvDQOULfbwMNXuTX/source.gif height="300px"></th>
+            </tr>
+            <tr>
+                <td><label for="fname">First name:</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last name:</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact:</label></td>
+                <td><input type="text" name="contact" pattern="^\d{10}$"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td><label for="about me">About me:</label></td>
+                <td><textarea name="about"
+                            width: 100%;
+                              height: 150px;
+                              padding: 12px 20px;
+                              box-sizing: border-box;
+                              border: 2px solid #ccc;
+                              border-radius: 4px;
+                              background-color: #f8f8f8;
+                              resize: none;
+                              placeholder="Write a short summary telling more about yourself..."></textarea></td>
+            </tr>
+            
+        </table>
+        <hr>
+        <center><span id="heading3">Education</span><br>
+        Add information about your educational background.</center>
+        <table id="table1">
+            <tr>
+                <td><label>High School Education</label><br>
+                <input type="text" name="School1" placeholder="School"/>
+                <input type="month" name="Year1" placeholder="Year Of Passing"/>
+                <input type="text" name="percentage1" placeholder="Percentage Or CGPA"/><br></td>
+                <td rowspan="4"><img src=https://media.giphy.com/media/iDySIfR42zbXnag4mx/source.gif height="300px"></td>
+            </tr>
+            <tr><td><label>Intermediate Education</label><br>
+                <input type="text" name="School2" placeholder="School"/>
+                <input type="month" name="Year2"/>
+                <input type="text" name="percentage2" placeholder="Percentage Or CGPA"/><br></td></tr>
+            <tr><td><label>Under Graduation</label><br>
+                <input type="text" name="college1" placeholder="College"/>
+                <input type="month" name="Year3" placeholder="Year Of Passing"/>
+                <input type="text" name="percentage3" placeholder="Percentage Or CGPA"/><br></td></tr>
+            <tr><td><label>Post Graduation</label><br>
+                <input type="text" name="college2" placeholder="College"/>
+                <input type="month" name="Year4" placeholder="Year Of Passing"/>
+                <input type="text" name="percentage4" placeholder="Percentage Or CGPA"/><br></td></tr>
+            </table>
+        
+        <hr>
+        <center><span id="heading3">Skills</span></center><br>
+        <table id="table1">
+            <tr>
+                <td rowspan="3">
+                    <img src=https://media.giphy.com/media/GW6fLDoGbFCQFxl2cZ/source.gif height="200px">
+                </td>
+                <td><input type="text" name="Skill1name" placeholder="Skill"/></td>
+                <td><select data-validate="" name="Skill1">
+                        <option value="">Select your skill level</option>
+                        <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                        <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                        <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                        <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                        <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        
+                    </select></td>
+                    
+            </tr>
+            <tr>
+                <td><input type="text" name="Skill2name" placeholder="Skill"/></td>
+                <td><select data-validate="" name="Skill2">
+                        <option value="">Select your skill level</option>
+                        <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                        <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                        <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                        <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                        <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        
+                    </select></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Skill3name" placeholder="Skill"/></td>
+                <td><select data-validate="" name="Skill3">
+                        <option value="">Select your skill level</option>
+                        <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                        <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                        <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                        <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                        <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                        
+                    </select></td>
+            </tr>
+        </table>
+        <hr>
+        <center><span id="heading3">Experience</span></center><br>
+        <table id="table1">
+            <tr>
+                <td><label>Employer:</label></td>
+                <td><input type="text" name="employer"/>
+                </td>
+                <td><label>Job title:</label></td>
+                <td><input type="text" name="job_title"/>
+                </td>
+                <td rowspan="3"><img src=https://media.giphy.com/media/Xsbb6ly59NWLcJsy3g/source.gif height="200px"></td>
+            </tr>
+            <tr>
+                <td><label>City:</label></td>
+                <td><input type="text" name="job_city"/>
+                </td>
+                <td><label>State:</label></td>
+                <td><input type="text" name="job_state"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Start Date:</label></td>
+                <td><input type="date" name="start_date"/>
+                </td>
+                <td><label>End Date:</label></td>
+                <td><input type="date" name="end_date"/>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <center><span id="heading3">Reference</span></center><br>
+        <table id="table1">
+            <tr>
+                <td rowspan="3"><img src=https://media.giphy.com/media/h6WIdJ4JRmCaFSACW3/source.gif height="200px"></td>
+                <td>Name:</td>
+                <td><input type="text" name="ref_name"></td>
+            </tr>
+            <tr>
+                <td>Contact:</td>
+                <td><input type="tel" name="ref_contact" pattern="^\d{10}$"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="ref_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+            </tr>
+        </table>
+        <br><hr>
+        <input type="submit" name="SUBMIT" value="Create PDF" id="myButton"/>
+    </form>
+</section>
+<footer></footer>
+</body>
+</html>

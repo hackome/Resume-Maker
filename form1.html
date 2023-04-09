@@ -1,0 +1,370 @@
+<html>
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet" type="text/css" media="screen">
+    <title>form</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+        <nav class="navbar" id="clearfix">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.php">Register</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    
+        <section class="container">
+
+            <form action="resume1.php" method="post" autocomplete="off">
+                <table id="table1">
+                    <tr>
+                        <td>
+                            <span id="heading3">Complete Your Resume Heading</span><br>
+                            Employers will use this information to contact you.<br><br>
+                            <label>Name : </label>
+                <input type="text" name="first_name" placeholder="First" required="required"/>
+                <input type="text" name="last_name" placeholder="Last" required="required"/><br>
+
+                <label>Email : </label>
+                <input type="email" name="email" placeholder="Email" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="required"/><br>
+
+                <label>Phone : </label>
+                <input type="text" name="phone" placeholder="Phone Number" 
+                pattern="^\d{10}$" required="required"/>
+                        </td>
+                        <td>
+                            <img src=https://media.giphy.com/media/vn5gXxYdQZkaTepBW9/source.gif height="400px">
+                        </td>
+                    </tr>
+                </table>
+                <br><hr>
+
+                <table id="table1">
+                    <tr>
+                        <td><img src=https://media.giphy.com/media/iihDQhtOTtmW7rhqvX/source.gif alt="" height="200px"></td>
+                        <td>
+                            <span id="heading3">Experience</span><br>
+                list your work experience.<br>
+                <mark>Mark the checkbox if you want experience section in your resume.
+                    <input type="checkbox" id="experience" name="experience" value="fill">
+                </mark><br><br>
+                <label>Employer : </label>
+                <input type="text" name="employer"/><br>
+                <label>Job title : </label>
+                <input type="text" name="job_title"/><br>
+                <label>City : </label>
+                <input type="text" name="job_city"/><br>
+                <label>State : </label>
+                <input type="text" name="job_state"/><br>
+                <label>Start Date : </label>
+                <select name="start_month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+                </select>
+                <select name="start_year">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+            <option value="1979">1979</option>
+            <option value="1978">1978</option>
+            <option value="1977">1977</option>
+            <option value="1976">1976</option>
+            <option value="1975">1975</option>
+            <option value="1974">1974</option>
+            <option value="1973">1973</option>
+            <option value="1972">1972</option>
+            <option value="1971">1971</option>
+            <option value="1970">1970</option>
+            <option value="1969">1969</option>
+            <option value="1968">1968</option>
+            <option value="1967">1967</option>
+            <option value="1966">1966</option>
+            <option value="1965">1965</option>
+            <option value="1964">1964</option>
+            <option value="1963">1963</option>
+            <option value="1962">1962</option>
+            <option value="1961">1961</option>
+                </select><br>
+                <label>End Date : </label>
+                <select name="end_month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+                </select>
+                <select name="end_year">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+            <option value="1979">1979</option>
+            <option value="1978">1978</option>
+            <option value="1977">1977</option>
+            <option value="1976">1976</option>
+            <option value="1975">1975</option>
+            <option value="1974">1974</option>
+            <option value="1973">1973</option>
+            <option value="1972">1972</option>
+            <option value="1971">1971</option>
+            <option value="1970">1970</option>
+            <option value="1969">1969</option>
+            <option value="1968">1968</option>
+            <option value="1967">1967</option>
+            <option value="1966">1966</option>
+            <option value="1965">1965</option>
+            <option value="1964">1964</option>
+            <option value="1963">1963</option>
+            <option value="1962">1962</option>
+            <option value="1961">1961</option>
+                </select><br>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+
+                <table id="table1">
+                    <tr>
+                        
+                        <td> 
+                            <span id="heading3">EDUCATION</span><br>
+                            Add information about your educational background.<br>
+                            <mark>Mark the checkbox if you want education section in your resume.
+                                <input type="checkbox" id="education" name="education" value="fill">
+                            </mark><br><br>
+                            <label>High School Education : </label>
+                            <input type="text" name="School1" placeholder="School"/>
+                            <input type="text" name="Year1" placeholder="Year Of Passing"/>
+                            <input type="text" name="percentage1" placeholder="Percentage Or CGPA"/><br>
+                            <label>Intermediate Education : </label>
+                            <input type="text" name="School2" placeholder="School"/>
+                            <input type="text" name="Year2" placeholder="Year Of Passing"/>
+                            <input type="text" name="percentage2" placeholder="Percentage Or CGPA"/><br>
+                            <label>Under Graduation : </label>
+                            <input type="text" name="college1" placeholder="College"/>
+                            <input type="text" name="Year3" placeholder="Year Of Passing"/>
+                            <input type="text" name="percentage3" placeholder="Percentage Or CGPA"/><br>
+                            <label>Post Graduation : </label>
+                            <input type="text" name="college2" placeholder="College"/>
+                            <input type="text" name="Year4" placeholder="Year Of Passing"/>
+                            <input type="text" name="percentage4" placeholder="Percentage Or CGPA"/>
+                        </td>
+                        <td id="algnmid">
+                            <img src=https://media.giphy.com/media/lq5GwiRsdTfaQCpED1/source.gif height="200px">
+                        </td>
+                    </tr>
+                </table>
+               <hr>
+
+               <table id="table1">
+                   <tr>
+                       <td id="algnmid">
+                           <img src=https://media.giphy.com/media/vrUkw8WWaOrtHqe2IA/source.gif height="200px">
+                       </td>
+                       <td>
+                        <span id="heading3">SKILLS</span><br>
+                        Highlight your top skills.<br>
+                        <mark>It is mandatory to fill atleast one skill.</mark><br>
+                        <input type="text" name="Skill1name" placeholder="Skill" required="required"/>
+                            <select data-validate="" name="Skill1">
+                                <option value="">Select your skill level</option>
+                                <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                                <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                                <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                                <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                                <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                            </select><br>
+                        <input type="text" name="Skill2name" placeholder="Skill"/>
+                            <select data-validate="" name="Skill2">
+                                <option value="">Select your skill level</option>
+                                <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                                <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                                <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                                <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                                <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                           </select><br>
+                       <input type="text" name="Skill3name" placeholder="Skill"/>
+                           <select data-validate="" name="Skill3">
+                               <option value="">Select your skill level</option>
+                               <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                               <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                               <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                               <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                               <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                           </select><br>
+                       </td>
+                   </tr>
+               </table>
+                 
+                <hr>
+
+                    <table id="table1">
+                        <tr>
+                            <td>
+                                <span id="heading3">PROFESSIONAL SUMMARY</span><br>
+                                Write a short summary telling more about yourself, your strengths and experience.<br>
+                                    <textarea type="text" name="Summary" height="200"
+                                              placeholder="Write a short summary telling more about yourself..." cols="40" rows="8">
+                                    </textarea>
+                            </td>
+                            <td id="algnmid">
+                                <img src=https://media.giphy.com/media/YjRgK13TDseVXii2c9/source.gif  height="300px">
+                            </td>
+                        </tr>
+                    </table>
+                <hr>
+
+                
+
+                   <table id="table1">
+                       <tr>
+                           <td  id="algnmid">
+                               <img src=https://media.giphy.com/media/0qjN4v21ZcikkiwrEv/source.gif height="300px">
+                           </td>
+                           <td> 
+                            <span id="heading3">Languages</span><br>
+                            <mark>It is mandatory to fill atleast one language.</mark><br>
+                            <input type="text" name="lan1Name" placeholder="Language Name" required="required"/>
+                               <select data-validate="" name="lan1">
+                                   <option value="">Select your language level</option>
+                                   <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                                   <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                                   <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                                   <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                                   <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                               </select><br>
+                               
+                               <input type="text" name="lan2Name" placeholder="Language Name"/>
+                               <select data-validate="" name="lan2">
+                                   <option value="">Select your language level</option>
+                                   <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                                   <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                                   <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                                   <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                                   <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                               </select><br>   
+                            <input type="text" name="lan3Name" placeholder="Language Name"/>
+                            <select data-validate="" name="lan3">
+                                <option value="">Select your language level</option>
+                                <option value="1">&starf; &star; &star; &star; &star; – Novice</option>
+                                <option value="2">&starf; &starf; &star; &star; &star; – Beginner</option>
+                                <option value="3">&starf; &starf; &starf; &star; &star; – Skillful</option>
+                                <option value="4">&starf; &starf; &starf; &starf; &star; – Experienced</option>
+                                <option value="5">&starf; &starf; &starf; &starf; &starf; – Expert</option>
+                            </select>
+                           </td>
+                       </tr>
+                   </table>
+                  <br><hr>
+                  
+                  
+                  <input type="submit" name="SUBMIT" value="Create PDF" id="mybutton"/>
+        
+    </form>
+        </section>
+        <footer></footer>
+</body>
+</html>
